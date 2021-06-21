@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        zad1();
-        zad2();
-        zad3();
-        zad4();
-        zad5();
+//        zad1();
+//        zad2();
+//        zad3();
+//        zad4();
+//        zad5();
     }
     public static boolean zad1() {
         int a;
