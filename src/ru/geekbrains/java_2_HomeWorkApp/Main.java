@@ -4,84 +4,37 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-//        zad1();
-//        zad2();
-//        zad3();
-//        zad4();
-//        zad5();
+        System.out.println(symma10and20(1, 7));
+        priznacChisla(10);
+        System.out.println(blPriznakChisla(0));
+        printString( "testtest", 5);
+        System.out.println(vesocosYear(12));
     }
-    public static boolean zad1() {
-        int a;
-        int b;
-        int c;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число a");
-        a = scanner.nextInt();
-        System.out.println("Введите число b");
-        b = scanner.nextInt();
-        c=a+b;
-        if (10 <=c && c <= 20) {
-            System.out.println("true");
-            return true;
-        } else {
-            System.out.println("false");
-            return false;
+    public static boolean symma10and20(int a, int b) {
+        return (10 <= a+b && a+b <= 20);
         }
-    }
-    public static void zad2() {
-        int a;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число");
-        a = scanner.nextInt();
+    public static void priznacChisla(int a) {
         if (a >= 0) {
-            System.out.println("положительное ");
+            System.out.println("Положительное ");
         } else {
-            System.out.println("отрицательное ");
+            System.out.println("Отрицательное ");
         }
     }
-    public static boolean zad3() {
-        int a;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число");
-        a = scanner.nextInt();
+    public static boolean blPriznakChisla(int a) {
         if (a < 0) {
-            System.out.println("true");
             return true;
         } else {
-            System.out.println("false");
             return false;
         }
     }
-    public static void zad4() {
-        int a;
-        String s;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Укажите сколько раз нужно отпечатать строку");
-        a = scanner.nextInt();
-        System.out.println("Укажите что нужно отпечать");
-        s = scanner.next();
+    public static void printString(String word, int a) {
         for (int i = 0; i < a; i++) {
-            System.out.println(s);
+            System.out.println(word);
         }
     }
-        public static boolean zad5(){
-        int a;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Укажите год");
-        a =scanner.nextInt();
-            if (a%400== 0) {
-                System.out.println("true");
-                return true;
-          } else if (a%100== 0){
-             System.out.println("false");
-              return false;
-         }else if (a%4== 0){
-            System.out.println("true");
-              return true;
-             }else { System.out.println("false");
-             return false;
-            }
+        public static boolean vesocosYear(int year){
+        return (year % 4 ==0 && year % 100 !=0 || year % 400 == 0);
+
     }
 }
 
