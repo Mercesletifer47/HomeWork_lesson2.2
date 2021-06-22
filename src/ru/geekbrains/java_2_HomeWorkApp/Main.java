@@ -15,9 +15,9 @@ public class Main{
         }
     public static void priznacChisla(int a) {
         if (a >= 0) {
-            System.out.println("Положительное ");
+            System.out.println("Положительное");
         } else {
-            System.out.println("Отрицательное ");
+            System.out.println("Отрицательное");
         }
     }
     public static boolean blPriznakChisla(int a) {
